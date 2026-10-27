@@ -1,0 +1,592 @@
+{
+ "bones": [
+  {
+   "name": "Bone",
+   "parent": null,
+   "head": [
+    -0.00131,
+    0.00011,
+    -0.00242
+   ],
+   "tail": [
+    -0.00131,
+    0.00011,
+    0.80183
+   ],
+   "roll": 0.0,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "Foot.L",
+   "parent": "Bone",
+   "head": [
+    0.26411,
+    0.04517,
+    0.02225
+   ],
+   "tail": [
+    0.26411,
+    -0.06205,
+    0.02099
+   ],
+   "roll": 3.14156,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "Foot.L_end",
+   "parent": "Foot.L",
+   "head": [
+    0.26411,
+    -0.06205,
+    0.02099
+   ],
+   "tail": [
+    0.26411,
+    -0.16927,
+    0.01973
+   ],
+   "roll": 3.14154,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "Body",
+   "parent": "Bone",
+   "head": [
+    0.00084,
+    -0.0192,
+    1.01427
+   ],
+   "tail": [
+    0.00084,
+    -0.0192,
+    1.21501
+   ],
+   "roll": 0.0,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "Hips",
+   "parent": "Body",
+   "head": [
+    -0.00064,
+    0.02705,
+    0.9475
+   ],
+   "tail": [
+    -0.00064,
+    0.05892,
+    1.26022
+   ],
+   "roll": 0.0,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "Abdomen",
+   "parent": "Hips",
+   "head": [
+    -0.00064,
+    0.05892,
+    1.26022
+   ],
+   "tail": [
+    -0.00064,
+    0.03493,
+    1.55783
+   ],
+   "roll": 0.0,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "Torso",
+   "parent": "Abdomen",
+   "head": [
+    -0.00064,
+    0.03493,
+    1.55783
+   ],
+   "tail": [
+    -0.00064,
+    0.01589,
+    1.84247
+   ],
+   "roll": -0.0,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "Neck",
+   "parent": "Torso",
+   "head": [
+    -0.00064,
+    0.0031,
+    2.03366
+   ],
+   "tail": [
+    -0.00064,
+    0.0031,
+    2.16715
+   ],
+   "roll": 0.0,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "Head",
+   "parent": "Neck",
+   "head": [
+    -0.00064,
+    0.0031,
+    2.16715
+   ],
+   "tail": [
+    -0.00064,
+    0.0031,
+    2.80757
+   ],
+   "roll": -0.00055,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "Head_end",
+   "parent": "Head",
+   "head": [
+    -0.00064,
+    0.0031,
+    2.80757
+   ],
+   "tail": [
+    -0.00064,
+    0.0031,
+    3.44799
+   ],
+   "roll": -0.00055,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "Shoulder.L",
+   "parent": "Torso",
+   "head": [
+    0.12546,
+    0.01207,
+    1.69796
+   ],
+   "tail": [
+    0.31954,
+    0.01207,
+    1.87027
+   ],
+   "roll": 0.84471,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "UpperArm.L",
+   "parent": "Shoulder.L",
+   "head": [
+    0.31954,
+    0.01207,
+    1.87027
+   ],
+   "tail": [
+    0.84732,
+    0.03473,
+    1.87027
+   ],
+   "roll": -0.06235,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "LowerArm.L",
+   "parent": "UpperArm.L",
+   "head": [
+    0.84732,
+    0.03473,
+    1.87027
+   ],
+   "tail": [
+    1.27235,
+    0.02211,
+    1.85972
+   ],
+   "roll": 0.02703,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "Fist.L",
+   "parent": "LowerArm.L",
+   "head": [
+    1.27235,
+    0.02211,
+    1.85972
+   ],
+   "tail": [
+    1.55218,
+    0.01,
+    1.85972
+   ],
+   "roll": 0.0377,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "Fist.L_end",
+   "parent": "Fist.L",
+   "head": [
+    1.55218,
+    0.01,
+    1.85972
+   ],
+   "tail": [
+    1.83202,
+    -0.00211,
+    1.85972
+   ],
+   "roll": 0.0377,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "Shoulder.R",
+   "parent": "Torso",
+   "head": [
+    -0.12546,
+    0.01207,
+    1.69795
+   ],
+   "tail": [
+    -0.31954,
+    0.01207,
+    1.87027
+   ],
+   "roll": -0.84471,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "UpperArm.R",
+   "parent": "Shoulder.R",
+   "head": [
+    -0.31954,
+    0.01207,
+    1.87027
+   ],
+   "tail": [
+    -0.84732,
+    0.03473,
+    1.87027
+   ],
+   "roll": 0.06235,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "LowerArm.R",
+   "parent": "UpperArm.R",
+   "head": [
+    -0.84732,
+    0.03473,
+    1.87027
+   ],
+   "tail": [
+    -1.27235,
+    0.02211,
+    1.85972
+   ],
+   "roll": -0.02703,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "Fist.R",
+   "parent": "LowerArm.R",
+   "head": [
+    -1.27235,
+    0.02211,
+    1.85972
+   ],
+   "tail": [
+    -1.55218,
+    0.01,
+    1.85972
+   ],
+   "roll": -0.0377,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "Fist.R_end",
+   "parent": "Fist.R",
+   "head": [
+    -1.55218,
+    0.01,
+    1.85972
+   ],
+   "tail": [
+    -1.83202,
+    -0.00211,
+    1.85972
+   ],
+   "roll": -0.0377,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "UpperLeg.L",
+   "parent": "Body",
+   "head": [
+    0.25387,
+    0.03673,
+    0.99757
+   ],
+   "tail": [
+    0.26279,
+    -0.00976,
+    0.54624
+   ],
+   "roll": -0.0224,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "LowerLeg.L",
+   "parent": "UpperLeg.L",
+   "head": [
+    0.26279,
+    -0.00976,
+    0.54624
+   ],
+   "tail": [
+    0.26279,
+    0.04515,
+    0.02213
+   ],
+   "roll": -0.0,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "LowerLeg.L_end",
+   "parent": "LowerLeg.L",
+   "head": [
+    0.26279,
+    0.04515,
+    0.02213
+   ],
+   "tail": [
+    0.26279,
+    0.10007,
+    -0.50199
+   ],
+   "roll": -0.0,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "UpperLeg.R",
+   "parent": "Body",
+   "head": [
+    -0.25387,
+    0.03673,
+    0.99757
+   ],
+   "tail": [
+    -0.26279,
+    -0.00976,
+    0.54624
+   ],
+   "roll": 0.0224,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "LowerLeg.R",
+   "parent": "UpperLeg.R",
+   "head": [
+    -0.26279,
+    -0.00976,
+    0.54624
+   ],
+   "tail": [
+    -0.26279,
+    0.04515,
+    0.02213
+   ],
+   "roll": 0.0,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "LowerLeg.R_end",
+   "parent": "LowerLeg.R",
+   "head": [
+    -0.26279,
+    0.04515,
+    0.02213
+   ],
+   "tail": [
+    -0.26279,
+    0.10007,
+    -0.50199
+   ],
+   "roll": 0.0,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "PoleTarget.L",
+   "parent": "Bone",
+   "head": [
+    0.26068,
+    -0.96303,
+    0.72212
+   ],
+   "tail": [
+    0.26068,
+    -0.96303,
+    0.99579
+   ],
+   "roll": 0.0,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "PoleTarget.L_end",
+   "parent": "PoleTarget.L",
+   "head": [
+    0.26068,
+    -0.96303,
+    0.99579
+   ],
+   "tail": [
+    0.26068,
+    -0.96303,
+    1.26946
+   ],
+   "roll": 0.0,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "Foot.R",
+   "parent": "Bone",
+   "head": [
+    -0.26411,
+    0.04517,
+    0.02225
+   ],
+   "tail": [
+    -0.26411,
+    -0.06205,
+    0.02099
+   ],
+   "roll": -3.1415,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "Foot.R_end",
+   "parent": "Foot.R",
+   "head": [
+    -0.26411,
+    -0.06205,
+    0.02099
+   ],
+   "tail": [
+    -0.26411,
+    -0.16927,
+    0.01973
+   ],
+   "roll": -3.14152,
+   "deform": true,
+   "connect": true
+  },
+  {
+   "name": "PoleTarget.R",
+   "parent": "Bone",
+   "head": [
+    -0.26068,
+    -0.96303,
+    0.72212
+   ],
+   "tail": [
+    -0.26068,
+    -0.96303,
+    0.99579
+   ],
+   "roll": -0.0,
+   "deform": true,
+   "connect": false
+  },
+  {
+   "name": "PoleTarget.R_end",
+   "parent": "PoleTarget.R",
+   "head": [
+    -0.26068,
+    -0.96303,
+    0.99579
+   ],
+   "tail": [
+    -0.26068,
+    -0.96303,
+    1.26946
+   ],
+   "roll": -0.0,
+   "deform": true,
+   "connect": true
+  }
+ ],
+ "arm_scale": [
+  1.0,
+  1.0,
+  1.0
+ ],
+ "arm_rot": [
+  -1.6292067073209182e-07,
+  0.0,
+  0.0
+ ],
+ "pose": {
+  "Bone": "QUATERNION",
+  "Foot.L": "QUATERNION",
+  "Foot.L_end": "QUATERNION",
+  "Body": "QUATERNION",
+  "Hips": "QUATERNION",
+  "Abdomen": "QUATERNION",
+  "Torso": "QUATERNION",
+  "Neck": "QUATERNION",
+  "Head": "QUATERNION",
+  "Head_end": "QUATERNION",
+  "Shoulder.L": "QUATERNION",
+  "UpperArm.L": "QUATERNION",
+  "LowerArm.L": "QUATERNION",
+  "Fist.L": "QUATERNION",
+  "Fist.L_end": "QUATERNION",
+  "Shoulder.R": "QUATERNION",
+  "UpperArm.R": "QUATERNION",
+  "LowerArm.R": "QUATERNION",
+  "Fist.R": "QUATERNION",
+  "Fist.R_end": "QUATERNION",
+  "UpperLeg.L": "QUATERNION",
+  "LowerLeg.L": "QUATERNION",
+  "LowerLeg.L_end": "QUATERNION",
+  "UpperLeg.R": "QUATERNION",
+  "LowerLeg.R": "QUATERNION",
+  "LowerLeg.R_end": "QUATERNION",
+  "PoleTarget.L": "QUATERNION",
+  "PoleTarget.L_end": "QUATERNION",
+  "Foot.R": "QUATERNION",
+  "Foot.R_end": "QUATERNION",
+  "PoleTarget.R": "QUATERNION",
+  "PoleTarget.R_end": "QUATERNION"
+ }
+}
